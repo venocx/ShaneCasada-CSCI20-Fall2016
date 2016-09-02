@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    // added cout.flush() to flush the cout so I could use 
+    
     int number=0; //number is Integer
     cout<<"Please enter a year: ";
     cin >> number;
@@ -23,7 +23,6 @@ int main()
     
     string noun; 
     cout<<"Please enter a name: ";
-    cout.flush();
     getline(cin.ignore(), noun);
  
     
