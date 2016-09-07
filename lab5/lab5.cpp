@@ -1,5 +1,13 @@
+//Shane Casada
+//9/6/16
+//Monsetr Maker
+
+/*A program that creats differnt monster from monster parts using the struct or "a group of data elements grouped together" 
+aka. monsterStruct and prints out the parts of each monster to make five different monsters*/
+
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 struct monsterStruct {
@@ -22,11 +30,10 @@ int main() {
   
   
       //Monster part picker
-       cout << "Lets create some monsters!" << endl;
-   
+      cout << "Lets create some monsters!" << endl;
   
       cout << "Pick 5 heads for each monster" << endl;
-      cout << "[Vegitas] [Franken] [Happy]" << endl;
+      cout << "[Vegitas] ☠ [Franken] ☠ [Happy]" << endl;
       cout << "Please enter a head types: ";
       cin >> monsterOne.head;
       cin >> monsterTwo.head;
@@ -35,7 +42,7 @@ int main() {
 
   
       cout << "Now pick 4 different types of mouths for each monster" << endl;
-      cout << "[Vegitas] [Wackus] [Spritem]" << endl;
+      cout << "[Vegitas] ☠ [Wackus] ☠ [Spritem]" << endl;
       cout << "Please enter a eye types: ";
       cin >> monsterOne.eyes;
       cin >> monsterTwo.eyes;
@@ -44,7 +51,7 @@ int main() {
 
     
       cout << "Now pick 4 are diff types of ears for each monster" << endl;
-      cout << "[Vegitas] [Wackus] [Spritem]" << endl;
+      cout << "[Vegitas] ☠ [Wackus] ☠ [Spritem]" << endl;
       cout << "Please enter a ears types: ";
       cin >> monsterOne.ears;
       cin >> monsterTwo.ears;
@@ -52,7 +59,7 @@ int main() {
       cin >> monsterFour.ears;
       
       cout << "Now pick 4 are diff types of nose for each monster" << endl;
-      cout << "[Vegitas] [Wackus] [Spritem]" << endl;
+      cout << "[Vegitas] ☠ [Wackus] ☠ [Spritem]" << endl;
       cout << "Please enter a nose types: ";
       cin >> monsterOne.nose;
       cin >> monsterTwo.nose;
@@ -60,7 +67,7 @@ int main() {
       cin >> monsterFour.nose;
       
       cout << "Now pick 4 are diff types of mouth for each monster" << endl;
-      cout << "[Vegitas] [Wackus] [Spritem]" << endl;
+      cout << "[Vegitas] ☠ [Wackus] ☠ [Spritem]" << endl;
       cout << "Please enter a mouth types: ";
       cin >> monsterOne.mouth;
       cin >> monsterTwo.mouth;
