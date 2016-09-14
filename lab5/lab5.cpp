@@ -2,8 +2,8 @@
 //9/6/16
 //Monsetr Maker
 
-/*A program that creats differnt monster from monster parts using the struct or "a group of data elements grouped together" 
-aka. monsterStruct and prints out the parts of each monster to make five different monsters*/
+/*A program that creats differnt 💀 monster 💀 from monster parts using the struct or "a group of data elements grouped together" 
+aka. monsterStruct and prints out the parts of each 💀 monster 💀 to make five different monsters*/
 
 #include <iostream>
 #include <string>
@@ -16,6 +16,7 @@ struct monsterStruct {
   string ears;
   string nose;
   string mouth;
+  
 };
 
 int main() {
@@ -78,16 +79,13 @@ int main() {
 
 
   //Output
-  cout << "Monster One is: " << monsterOne.head << " " << monsterOne.eyes << " " <<
+  cout << " 💀 Monster One is: " << monsterOne.head << " " << monsterOne.eyes << " " <<
   monsterOne.nose << " " << monsterOne.ears << " " << monsterOne.mouth << endl;
-  cout << "Monster Two is: " << monsterTwo.head << " " << monsterTwo.eyes << " " <<
+  cout << " 💀 Monster Two is: " << monsterTwo.head << " " << monsterTwo.eyes << " " <<
   monsterTwo.nose << " " << monsterTwo.ears << " " << monsterTwo.mouth << endl;
-  cout << "Monster Three is: " << monsterThree.head << " " << monsterThree.eyes << " " <<
+  cout << " 💀 Monster Three is: " << monsterThree.head << " " << monsterThree.eyes << " " <<
   monsterThree.nose << " " << monsterThree.ears << " " << monsterThree.mouth << endl;
-  cout << "Monster Four is: " << monsterFour.head << " " << monsterFour.eyes << " " <<
+  cout << " 💀 Monster Four is: " << monsterFour.head << " " << monsterFour.eyes << " " <<
   monsterFour.nose << " " << monsterFour.ears << " " << monsterFour.mouth << endl;
-
-
-  
 
 }
