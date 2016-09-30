@@ -40,7 +40,8 @@ int main()
     
 for(int x = 100; x >= 2; x--)
   {
-      cout << min_bottle(x) <<" bottles of beer on the wall, " << min_bottle(x) << " bottles of beer. Take one down and pass it around, " << (min_bottle(x)-1) << " bottles of beer on the wall." << nothing(y, z) << endl;
+      cout << min_bottle(x) <<" bottles of beer on the wall, " << min_bottle(x) << " bottles of beer. Take one down and pass it around, "
+      << (min_bottle(x)-1) << " bottles of beer on the wall." << nothing(y, z) << endl;
   }
     
   

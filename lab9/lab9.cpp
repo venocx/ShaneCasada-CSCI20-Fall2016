@@ -40,13 +40,13 @@ class TemperatureConverter //Makes TemperatureConverter clas
             }
             
         double  SetTempFromCelsius(double x) 
-         { 
-            kelvin_ = x + 273.15;
-         }
+            { 
+                kelvin_ = x + 273.15;
+            }
          
         double  SetTempFromFahrenheit(double x) 
             { 
-                 kelvin_ = ((5 * (x - 32) / 9) + 273.15);
+                kelvin_ = ((5 * (x - 32) / 9) + 273.15);
             }
         
         double  GetTempFromKelvin()
