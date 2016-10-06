@@ -170,8 +170,7 @@ int main ()
     refund(taxes(personalexemption(adjustedGrossIncome(tips, grossWages), filingStatus), filingStatus) , filingStatus, taxWithheld); 
     cout << " " << userName << endl;
     cout << endl;
-    
-    cout << "💀Give us money NOOOOOOOW!!!!!💀" << endl;
+
 
     
     return 0;
