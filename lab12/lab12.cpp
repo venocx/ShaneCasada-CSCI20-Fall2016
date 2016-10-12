@@ -11,7 +11,7 @@
 
 using namespace std;
 
-char guess(char x)
+char guess(char x) // created a guess and check if/else statemsnts
 {
     cout << "Great" << endl;
     cout << "First Question" << endl <<
@@ -57,7 +57,7 @@ if(x == 't' || x == 'T' || x == 'y' || x == 'Y')
 else if(x == 'f' || x == 'F' || x == 'n' || x == 'N')
     {
         cout << "Great" << endl <<
-        "Next Question" <<
+        "Next Question " <<
         "Do you like cheese?" << endl;
         cin >> x;
         
@@ -102,7 +102,7 @@ int main ()
     cout << "Would you like to play 20 questions? (Y/N)" << endl;
     cin >> answer;
     
-    switch(answer)
+    switch(answer)// created a switch statment that lets me pick yes or no if I wanted to play
         {
            
             case 'y':
@@ -121,7 +121,7 @@ int main ()
            
         }
         
-    cout << "What kind of animal are you?" << endl;
+    cout << "What kind of animal are you?" << endl; // alowed the animals to be picked
     cout << endl;
     cout << "Your can pick from: " << endl;
     cout << endl;
@@ -129,7 +129,7 @@ int main ()
     cin >> animalName;
     cout << endl;
     
-        switch(animalName)
+        switch(animalName)// created the ability to add upper case and lower case for the pick of an animal
         {
             case 'H':
             case 'h':
