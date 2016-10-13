@@ -25,29 +25,30 @@ int main ()
             
  /* made a if/else with nested while loops to get the print time to work.*/
     
-         if(minStart > 0)
-         {
-             while(minStart <= 60){
-                                 cout << hourStart << ":" << minStart << " PM" << " ";
-                                 ++minStart;
+        if(minStart > 0)
+        {
+            for(int minStart = 0; minStart <= 60; minStart++)// changed while loop to for loop
+            {
+                cout << hourStart << ":" << minStart << " PM" << " ";
+                
                                 
-                                 if(minStart == 60 && hourStart == 1){
-                                    cout << hourStart << ":" << minStart << " PM" << " ";
-                                     minStart = 0;
-                                     ++hourStart;
+                if(minStart == 60 && hourStart == 1)
+                {
+                    cout << hourStart << ":" << minStart << " PM" << " ";
+                    minStart = 0;
+                                     
                                     
-                                     if(minStart == 00)
-                                          {
-                                             cout << hourStart << ":" << "00" << " PM ";
-                                             }
-                                     while(minStart < 10)
-                                     {
-                                         cout << hourStart << ":" << "0" << minStart << " PM" << " ";
-                                         ++minStart;
-                                   }
-                             }
-                         }// end of first while loop for (minStart <= 60).
-      }    
+                    if(minStart == 00)
+                        {
+                            cout << hourStart << ":" << "00" << " PM ";
+                        }
+                    for(int minStart = 0; minStart < 10; minStart++) // changed while loop to for loop
+                        {
+                            cout << hourStart << ":" << "0" << minStart << " PM" << " ";
+                        }
+                }//end of if statment
+            }// end of first while loop for (minStart <= 60).
+        }// endl of main if statment    
          else{
         
                  while(minStart < 10)
@@ -167,7 +168,7 @@ cout << "Out putting a 15 min incrament between ";
     
 while(hourStart <= hourEnd && minStart <= minEnd)// a while loop that compairs the Start time0 with the End time. 
  {
-    if(minStart == 00 /*&& minEnd > 00*/) //adds a if statment so that if the min is 00 it will print out the double 00 not just one 0.
+    if(minStart == 00) //adds a if statment so that if the min is 00 it will print out the double 00 not just one 0.
     {
         cout << hourStart << ":" << "00" << " PM ";
         minStart = minStart + 15;
@@ -179,12 +180,10 @@ while(hourStart <= hourEnd && minStart <= minEnd)// a while loop that compairs t
         minStart = minStart + 15;
     }// end of else
    
-            while(minStart == 60 && hourStart == 1) // restarts the first whoile loop
+        for(int minStart = 0; minStart == 60 && hourStart == 1; ++hourStart) // restarts the first whoile loop (changed while loop to for loop)
         {
             minStart = 00;
-            ++hourStart;
             cout << hourStart << ":" << "00" << " PM ";
-            
         }// end of minStart == 60 && hourStart == 1 while loop'
  }// end of While loop for adding 15min incraments
 }// end of main 
