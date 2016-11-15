@@ -18,8 +18,8 @@ using namespace std;
 
 int main()
 {
-   ofstream outFS;
-   ifstream inFS;     // Input file stream
+   ofstream outFS; // output file steam
+   ifstream inFS; // Input file stream
    int myArray[5][5], i, j, total_row_1 = 0, total_row_2 = 0,  total_row_3 = 0, total_column_1 = 0, total_column_2 = 0, total_column_3 = 0, total_column_4 = 0,
    row_1 = 0, row_2 = 0, row_3 = 0, column_1 = 0, column_2 = 0, column_3, column_4 = 0;
    
@@ -43,7 +43,7 @@ int main()
       return 1; // 1 indicates error
    }
    
-   while (!inFS.eof())
+   while (!inFS.eof()) // loops till end of txt file
    {
       cout << "Doing Great Stuff to output.txt file"<< endl;
       for(i = 0; i < 5; ++i)
